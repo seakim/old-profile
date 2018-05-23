@@ -48,6 +48,11 @@ body {
     color: rgba(255,255,255,0.5);
 }
 
+/* wanted to use this to go to #portfolio slowly, but doesn't seem to work this way*/
+/* #easy_transition {
+    transition: all 3s ease 0s;
+} */
+
 /* banner text area */
 .banner_text_1 {
     position: absolute;
@@ -73,17 +78,92 @@ body {
 /* portfolio area */
 .portfolio {
 }
-
 .pf_container {
     position: absolute;
     top: 100vh;
     margin: 2.5%;
     margin-bottom: 5%;
     width: 95%;
-    height: 100vh;
+    /* height: 100vh; */
     z-index: 50;
-    background: #ffffff;   
+    background-image: url("../img/background-2.png");
+    background-size: cover;
 }
+.pf_container h1 {
+    margin: 20px;
+    margin-left: 10%;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+.inner_container {
+    margin: 20px;
+    background: rgb(255,255,255,0.9);
+}
+.card_1 {
+    padding: 0;
+}
+.pf-img {
+    height: 300px;
+    margin: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.pf-img:hover {
+    margin: 10px;
+    height: 320px;
+    transition: all 0.5s ease 0s;
+}
+
+.img-1 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-2 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-3 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-4 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-5 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-6 {
+    background-image: url("../img/img-1.jpg");
+}
+
+
+/* inside modal */
+#test-img {
+    background-image: url("../img/img-2.jpeg");
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.inner-img {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#img_1-1 {
+    background-image: url("../img/img-4.jpeg");
+}
+#img_1-2 {
+    background-image: url("../img/img-5.png");
+}
+#img_1-3 {
+    background-image: url("../img/img-6.jpg");
+}
+/* inside modal ends */
+
+
+
+
 
 footer {
     position: absolute;
@@ -110,6 +190,7 @@ footer p {
 }
 
 @media only screen and (max-width : 768px) {
+
     .banner_text_1 h1 {
         font-size: 2.4em;
     }
