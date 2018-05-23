@@ -5,6 +5,7 @@ body {
 /* banner area */
 .banner_1 {
     position:relative;
+    color: white;
 }
 #banner_video {
     position: fixed;
@@ -21,6 +22,54 @@ body {
     /* transition: 1s opacity; */
 }
 
+/* nav area */
+.nav_1 {
+    margin: 20px;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,255,255,0);
+} 
+#item_1 {
+    color: rgba(255,255,255,0);
+    font-weight: bold;
+    font-size: 1.7em;
+}
+#item_2 {
+    color: rgba(255,255,255,0.5);
+}
+#item_2:hover {
+    color: rgba(255,255,255,1);
+    font-weight: bold;
+}
+#item_3 {
+    color: rgba(255,255,255,0.5);
+}
+
+/* banner text area */
+.banner_text_1 {
+    position: absolute;
+    top: 50vh;
+    margin: 20px;
+}
+.banner_text_1 h1{
+    font-size: 3.8em;
+    margin-bottom: 13px;
+}
+.banner_text_2 {
+    position: absolute;
+    top: 90vh;
+    right: 2%;
+    float: right;
+    margin-right: 5px;
+    font-size: 0.7em;
+}
+.banner_text_2 a {
+    color: rgba(255,255,255,0.4);
+}
+
 /* portfolio area */
 .portfolio {
 }
@@ -29,8 +78,55 @@ body {
     position: absolute;
     top: 100vh;
     margin: 2.5%;
+    margin-bottom: 5%;
     width: 95%;
     height: 100vh;
     z-index: 50;
     background: #ffffff;   
+}
+
+footer {
+    position: absolute;
+    top:208vh;
+    right: 3%;
+    color: rgba(255,255,255,0.7);
+    text-align: right;
+}
+footer a {
+    color: rgba(255,255,255,0.7);
+}
+footer p {
+    margin-bottom: 0;
+}
+#ftr_email {
+    font-size: 0.7em;
+    margin-bottom: 20px;
+}
+
+
+
+
+@media only screen and (max-width : 980px) {
+}
+
+@media only screen and (max-width : 768px) {
+    .banner_text_1 h1 {
+        font-size: 2.4em;
+    }
+    .banner_text_1 h3{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width : 640px) {
+}
+
+@media only screen and (max-width : 425px) {
+
+    .banner_text_1 h3 {
+        font-size: 0.8em;
+    }
+    .banner_text_2 a {
+        font-size: 0.4em;
+    }
 }

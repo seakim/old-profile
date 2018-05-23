@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-
     <head>
         <meta charset="utf-8">
         <meta name="Viewport" content="width=device-width, initial-scale=1">
@@ -16,17 +14,73 @@
     </head>
 
     <body>
-        <!-- Banner page -->
+        <!-- banner area -->
         <div class="banner_1">
             <video autoplay muted loop id="banner_video">
                 <source src="assets/img/32835481-preview.mp4" type="video/mp4">
             </video>
-        </div>
-        <div class="portfolio">
-            <div class="pf_container">
-                
+
+            <!-- nav -->
+            <div class="nav_1">
+                <nav class="navbar navbar-expand-lg navbar-light nav-2">
+
+                    <!-- Not in use -->
+                    <a class="navbar-brand" id="item_1" href="#">Welcome!</a>
+
+                    <!-- Menu -->
+                    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="button_1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" id="item_2" href="#">About
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="item_2" href="#">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="item_2" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="item_3" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <!-- banner text area -->
+            <div class="banner_text_1">
+                <h1>Hi, I'm Sean,</h1>
+                <h3>a student of Rutgers Coding Bootcamp,</h3>
+                <h3>currently studying to become a full-stack developer.</h3>
+            </div>
+
+            <div class="banner_text_2">
+                <a href="https://www.shutterstock.com/video/clip-32835481-artificial-intelligence-ai)-brain-animation-data-mining">
+                    image source: https://www.shutterstock.com/</a>
             </div>
         </div>
+
+
+        <!-- portfolio area -->
+        <div class="portfolio">
+            <div class="pf_container">
+
+            </div>
+        </div>
+
+        <!-- footer area -->
+        <footer>
+            <p>&copy Sean Kim</p>
+            <p id="ftr_email"><a href="#">dev.seakim@gmail.com</a></p>
+        </footer>
+
+
 
         <!-- bootstrapCDN -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
