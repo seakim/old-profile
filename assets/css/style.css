@@ -2,12 +2,12 @@ body {
 
 }
 
-/* banner area */
-.banner_1 {
+/* background with fixed banner */
+.background_banner {
     position:relative;
     color: white;
 }
-#banner_video {
+#background_video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -75,30 +75,40 @@ body {
     color: rgba(255,255,255,0.4);
 }
 
-/* portfolio area */
-.portfolio {
-}
-.pf_container {
+
+/* outer container area */
+.outer_container {
     position: absolute;
     top: 100vh;
     margin: 2.5%;
     margin-bottom: 5%;
     width: 95%;
     /* height: 100vh; */
+    z-index: 30;
+    background: rgb(255,255,255,0);
+}
+
+/* portfolio area */
+.pf_container {
+    margin: 2.5%;
+    margin-bottom: 5%;
+    width: 95%;
     z-index: 50;
     background-image: url("../img/background-2.png");
     background-size: cover;
 }
 .pf_container h1 {
-    margin: 20px;
-    margin-left: 10%;
+    margin: 5% 0 2% 10%;
     letter-spacing: 4px;
     font-weight: bold;
+    z-index: 100;
+    color: black;
 }
 .inner_container {
     margin: 20px;
-    background: rgb(255,255,255,0.9);
+    background: rgb(255,255,255,1);
 }
+
 .card_1 {
     padding: 0;
 }
@@ -134,8 +144,87 @@ body {
     background-image: url("../img/img-1.jpg");
 }
 
+/* bot-video area */
+/* .bot-video {
+    margin: 0%;
+    width: 85%;
+    z-index: 50;
 
-/* inside modal */
+    height: 300px;
+    background: red;
+}
+#bot_video {
+    min-width: 100%;
+}
+
+.bot-video-content {
+    
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+} */
+
+section {
+    /* height: 100vh; */
+    overflow: hidden;
+    position: relative;
+  }
+  video {
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .vignette {
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  /* h1 {
+    color: #fff;
+    font-size: 4rem;
+    margin: 3rem;
+    position: absolute;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 2;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+/* footer area */
+footer {
+    color: rgba(255,255,255,0.7);
+    margin: 2.5% 4%;
+    text-align: right;
+}
+footer a {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.7em;
+}
+footer p {
+    margin-bottom: 0;
+}
+
+
+/* portfolio modal */
 #test-img {
     background-image: url("../img/img-2.jpeg");
     width: 300px;
@@ -159,29 +248,7 @@ body {
 #img_1-3 {
     background-image: url("../img/img-6.jpg");
 }
-/* inside modal ends */
 
-
-
-
-
-footer {
-    position: absolute;
-    top:208vh;
-    right: 3%;
-    color: rgba(255,255,255,0.7);
-    text-align: right;
-}
-footer a {
-    color: rgba(255,255,255,0.7);
-}
-footer p {
-    margin-bottom: 0;
-}
-#ftr_email {
-    font-size: 0.7em;
-    margin-bottom: 20px;
-}
 
 
 
