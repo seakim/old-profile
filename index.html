@@ -99,34 +99,25 @@
             </div>
 
             <!-- botton video -->
-            <div class="ft_container card">
+            <div class="ftr_container card">
 
                 <section>
-                    <div class="footnote">
+                    <div class="ftr_btn">
+                        <button type="button" id="ftr_btn" onclick="play_pause()">Pause</button>
+                    </div>
+                    <div class="ftr_note">
                         <p>&copy Sean Kim</p>
                         <br>
                         <p id="ftr_email">
                             <a href="#">dev.seakim@gmail.com</a>
                         </p>
                     </div>
-                    <video autoplay muted loop>
-                        <!-- <video loop preload autoplay> -->
+                    <video autoplay muted loop id="ftr_video">
                         <source src="assets/img/3813743-preview.mp4" type="video/mp4">
                     </video>
                 </section>
             </div>
         </div>
-
-
-        <!-- footer area -->
-        <!-- <footer>
-            <p>&copy Sean Kim</p>
-            <p id="ftr_email">
-                <a href="#">dev.seakim@gmail.com</a>
-            </p>
-        </footer> -->
-
-
     </div>
 
 
@@ -253,6 +244,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -274,6 +266,7 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
