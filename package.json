@@ -6,6 +6,7 @@
   "dependencies": {
     "hoek": "4.2.1",
     "node-sass": "^4.9.0",
+    "npm": "^6.1.0",
     "tunnel-agent": "^0.6.0"
   },
   "devDependencies": {
