@@ -108,12 +108,13 @@
 
 .card_1 {
     padding: 0;
+    position: relative;
 }
 .pf-img {
     height: 300px;
     margin: 20px;
     background-size: cover;
-    background-position: center;
+    /* background-position: center; */
     background-repeat: no-repeat;
     cursor: pointer;
 }
@@ -122,24 +123,13 @@
     height: 320px;
     transition: all 0.5s ease 0s;
 }
-
-.img-1 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-2 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-3 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-4 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-5 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-6 {
-    background-image: url("../img/img-1.jpg");
+.pf-placeholder-note {
+    position: absolute;
+    z-index: 50;
+    top: 10%;
+    right: 8%;
+    color: rgba(47, 70, 143, 0.4);
+    font-size: 0.5em;
 }
 
 /* footer area */
@@ -161,27 +151,17 @@ section {
     top: 40%;
     transform: translate(-50%, -40%);
 }
-.ftr_btn {
-    margin: 10px;
-}
-#ftr_btn {
+.ftr_info {
     position: absolute;
-    z-index: 50;
-    font-weight: bold;
-    background: rgb(255,255,255,0);
-    cursor: pointer;
-}
-.ftr_note {
-    position: absolute;
-    right: 5%;
+    right: 2%;
     bottom: 5%;
     z-index: 2;
 }
-.ftr_note p {
+.ftr_info p {
     margin: 0;
     float: right;
 }
-.ftr_note p a {
+.ftr_info p a {
     color: rgb(255,255,255,1);
 }
 
@@ -201,6 +181,19 @@ section {
     background-position: center;
     background-repeat: no-repeat;
 }
+#toLink {
+    margin: -2% 0 0 0;
+    float: right;
+    font-size: 0.8em;
+}
+.modal-btn {
+    position: absolute;
+}
+
+/* images */
+#rcb4_1 {
+    background-image: url("../portfolio-img/rcb4/crystal_collector.png");
+}
 #img_1-1 {
     background-image: url("../img/img-4.jpeg");
 }
@@ -210,6 +203,24 @@ section {
 #img_1-3 {
     background-image: url("../img/img-6.jpg");
 }
+.img-2 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-3 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-4 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-5 {
+    background-image: url("../img/img-1.jpg");
+}
+.img-6 {
+    background-image: url("../img/img-1.jpg");
+}
+
+
+
 
 
 
@@ -228,6 +239,9 @@ section {
 }
 
 @media only screen and (max-width : 640px) {
+    #rcb4_1 {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width : 425px) {

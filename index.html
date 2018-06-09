@@ -8,8 +8,8 @@
 
     <title>Portfolio</title>
     <link rel="stylesheet" href="assets/css/bootstrap.css" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+    <!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -18,7 +18,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
 
-    <script src="assets/js/script.js"></script>
 
 </head>
 
@@ -81,45 +80,50 @@
         <!-- outer container area -->
         <div class="outer_container">
 
+            <!--  -->
             <!-- portfolio area -->
+            <!--  -->
+
             <div class="pf_container card" id="portfolio">
                 <h1>Portfolio</h1>
 
                 <div class="inner_container row">
-                    <div class="card_1 col-lg-4">
-                        <div class="card pf-img img-1" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                    <div class="card_1 col-lg-4" id="rcb4">
+                        <div class="card pf-img img-1" id="rcb4_1" data-toggle="modal" data-target="#rcb4Modal"></div>
                     </div>
-                    <div class="card_1 col-lg-4">
+                    <div class="card_1 col-lg-4 pftemp">
                         <div class="card pf-img img-2" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
                     </div>
-                    <div class="card_1 col-lg-4">
+                    <div class="card_1 col-lg-4 pftemp">
                         <div class="card pf-img img-3" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
                     </div>
-                    <div class="card_1 col-lg-4">
+                    <div class="card_1 col-lg-4 pftemp">
                         <div class="card pf-img img-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
                     </div>
-                    <div class="card_1 col-lg-4">
+                    <div class="card_1 col-lg-4 pftemp">
                         <div class="card pf-img img-5" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
                     </div>
-                    <div class="card_1 col-lg-4">
+                    <div class="card_1 col-lg-4 pftemp">
                         <div class="card pf-img img-6" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
                     </div>
                 </div>
             </div>
 
+
+            
             <!-- botton video -->
             <div class="ftr_container card">
 
                 <section>
-                    <div class="ftr_btn">
-                        <button type="button" id="ftr_btn" onclick="play_pause()">Pause</button>
-                    </div>
-                    <div class="ftr_note">
-                        <p>&copy Sean Kim</p>
-                        <br>
-                        <p id="ftr_email">
-                            <a href="#">dev.seakim@gmail.com</a>
-                        </p>
+                    <div class="ftr_info">
+                        <p>&copy Sean Kim</p><br>
+                        <p><a href="#">dev.seakim@gmail.com</a></p><br>
+                        <p><a href="https://github.com/seakim">https://github.com/seakim</a></p>
                     </div>
                     <video autoplay muted loop id="ftr_video">
                         <source src="assets/img/3813743-preview.mp4" type="video/mp4">
@@ -181,7 +185,7 @@
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contact</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Contact Info</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -191,12 +195,18 @@
                     <div class=container_1>
                         <form action="mailto:dev.seakim@gmail.com" method="post" enctype="text/plain">
                             <div class="form-group">
+                                <p>Email: dev.seakim@gmail.com<br>
+                                   Github: <a href="https://github.com/seakim">https://github.com/seakim</a></p><br>
+                            </div>
+                            
+                            <h5>Email Me</h5>
+                            <div class="form-group">
                                 <label for="exampleFormControlInput1">Your Email:</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="TypeIn@YourEmail.com">
                             </div>
                             <div class="form-group">
                                 <label for="exampleFormControlTextarea1">Message:</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="What's on your mind?"></textarea>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="I've been waiting for your message"></textarea>
                             </div>
                         </form>
                     </div>
@@ -209,8 +219,47 @@
         </div>
     </div>
 
+
+
+    <!--  -->
     <!-- portfolio - Large modal -->
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <!--  -->
+
+    <!-- RCB-hw4 Modal -->
+    <div class="modal fade" id="rcb4Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- card -->
+                <div class="card">
+                    <button type="button modal-btn" class="btn btn-secondary" data-dismiss="modal">X</button>
+                    <div>
+                            <a href="https://seakim.github.io/unit-4-game/"><img class="d-block w-100 inner-img" id="rcb4_1"></a>
+                    </div>
+
+                    <!-- card body -->
+                    <div class="card-body">
+                        <p id="toLink"><i>Click the image to play the game!!!</i></p>
+                        <h5 class="card-title">Rutgers Coding Bootcamp - HW4: Crystal Collector</h5>
+                        <p class="card-text">In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
+                        </p>
+                        <p class="card-text"><b>GAME RULE</b><br>
+                                            <i>* The random number shown at the start of the game should be between 19 - 120.<br>
+                                            * Each crystal should have a random hidden value between 1 - 12.<br>
+                                            * Player wins if their total score matches the random number from the beginning of the game.<br>
+                                            * This app shows the number of games the player wins and loses.</i>
+                        </p>                
+                    </div>
+                    <div class="modal-footer">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal template -->
+    <div class="modal fade bd-example-modal-lg" id="/" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
@@ -267,7 +316,7 @@
 
 
 
-
+    <script src="assets/js/script.js"></script>
 
 </body>
 
