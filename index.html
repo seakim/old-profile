@@ -91,39 +91,52 @@
                     <div class="card_1 col-lg-4" id="rcb4">
                         <div class="card pf-img img-1" id="rcb4_1" data-toggle="modal" data-target="#rcb4Modal"></div>
                     </div>
-                    <div class="card_1 col-lg-4 pftemp">
-                        <div class="card pf-img img-2" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
+                    <div class="card_1 col-lg-4" id="rcb4">
+                        <div class="card pf-img img-1" id="rcb5_1" data-toggle="modal" data-target="#rcb5Modal"></div>
                     </div>
                     <div class="card_1 col-lg-4 pftemp">
-                        <div class="card pf-img img-3" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
+                        <div class="card sp-img img-3" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note">
+                            <b>Placeholder Image</b>
+                        </p>
                     </div>
                     <div class="card_1 col-lg-4 pftemp">
-                        <div class="card pf-img img-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
+                        <div class="card sp-img img-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note">
+                            <b>Placeholder Image</b>
+                        </p>
                     </div>
                     <div class="card_1 col-lg-4 pftemp">
-                        <div class="card pf-img img-5" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
+                        <div class="card sp-img img-5" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note">
+                            <b>Placeholder Image</b>
+                        </p>
                     </div>
                     <div class="card_1 col-lg-4 pftemp">
-                        <div class="card pf-img img-6" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note"><b>Placeholder Image</b></p>
+                        <div class="card sp-img img-6" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                        <p class="pf-placeholder-note">
+                            <b>Placeholder Image</b>
+                        </p>
                     </div>
                 </div>
             </div>
 
 
-            
+
             <!-- botton video -->
             <div class="ftr_container card">
 
                 <section>
                     <div class="ftr_info">
-                        <p>&copy Sean Kim</p><br>
-                        <p><a href="#">dev.seakim@gmail.com</a></p><br>
-                        <p><a href="https://github.com/seakim">https://github.com/seakim</a></p>
+                        <p>&copy Sean Kim</p>
+                        <br>
+                        <p>
+                            <a href="#">dev.seakim@gmail.com</a>
+                        </p>
+                        <br>
+                        <p>
+                            <a href="https://github.com/seakim">https://github.com/seakim</a>
+                        </p>
                     </div>
                     <video autoplay muted loop id="ftr_video">
                         <source src="assets/img/3813743-preview.mp4" type="video/mp4">
@@ -150,6 +163,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
+                    <img id="profile-1" src="assets/portfolio-img/profile/profile_1.jpg">
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ab asperiores, soluta veniam accusamus
                         dolorum! Maiores, ipsa sint. Repudiandae labore commodi culpa maxime eveniet molestiae harum quaerat
                         id voluptatum sit!</p>
@@ -195,10 +209,13 @@
                     <div class=container_1>
                         <form action="mailto:dev.seakim@gmail.com" method="post" enctype="text/plain">
                             <div class="form-group">
-                                <p>Email: dev.seakim@gmail.com<br>
-                                   Github: <a href="https://github.com/seakim">https://github.com/seakim</a></p><br>
+                                <p>Email: dev.seakim@gmail.com
+                                    <br> Github:
+                                    <a href="https://github.com/seakim">https://github.com/seakim</a>
+                                </p>
+                                <br>
                             </div>
-                            
+
                             <h5>Email Me</h5>
                             <div class="form-group">
                                 <label for="exampleFormControlInput1">Your Email:</label>
@@ -232,25 +249,107 @@
 
                 <!-- card -->
                 <div class="card">
-                    <button type="button modal-btn" class="btn btn-secondary" data-dismiss="modal">X</button>
                     <div>
-                            <a href="https://seakim.github.io/unit-4-game/"><img class="d-block w-100 inner-img" id="rcb4_1"></a>
+                        <img class="d-block w-100 pf-modal-img" id="rcb4_1">
                     </div>
 
                     <!-- card body -->
                     <div class="card-body">
-                        <p id="toLink"><i>Click the image to play the game!!!</i></p>
-                        <h5 class="card-title">Rutgers Coding Bootcamp - HW4: Crystal Collector</h5>
-                        <p class="card-text">In this assignment, you'll create another fun and interactive game for web browsers. This time, your app must dynamically update your HTML pages with the jQuery library.
+                        <p id="toLink">
+                            <a href="https://seakim.github.io/unit-4-game/"><i><b>CLICK THIS</b> AND PLAY THE GAME !!!</i></a>
                         </p>
-                        <p class="card-text"><b>GAME RULE</b><br>
-                                            <i>* The random number shown at the start of the game should be between 19 - 120.<br>
-                                            * Each crystal should have a random hidden value between 1 - 12.<br>
-                                            * Player wins if their total score matches the random number from the beginning of the game.<br>
-                                            * This app shows the number of games the player wins and loses.</i>
-                        </p>                
+                        <h5 class="card-title">Rutgers Coding Bootcamp - HW4: Crystal Collector</h5>
+                        <p class="card-text">In this assignment, you'll create another fun and interactive game for web browsers. This time, your
+                            app must dynamically update your HTML pages with the jQuery library.
+                        </p>
+                        <p class="card-text">
+                            <b>GAME RULE</b>
+                            <br>
+                            <i>* The random number shown at the start of the game should be between 19 - 120.
+                                <br> * Each crystal should have a random hidden value between 1 - 12.
+                                <br> * Player wins if their total score matches the random number from the beginning of the game.
+                                <br> * This app shows the number of games the player wins and loses.</i>
+                        </p>
                     </div>
                     <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- RCB-hw5 Modal -->
+    <div class="modal fade" id="rcb5Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- card -->
+                <div class="card">
+
+                    <!-- carousel -->
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 pf-modal-img" id="rcb5_1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 pf-modal-img" id="rcb5_2">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 pf-modal-img" id="rcb5_3">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100 pf-modal-img" id="rcb5_4">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+
+
+                    <!-- <div class="modal fade" id="rcb4Modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                    
+                                    <!-- card -->
+                                    <!-- <div class="card">
+                                        <button type="button modal-btn" class="btn btn-secondary" data-dismiss="modal">X</button>
+                                        <div>
+                                            <a href="https://seakim.github.io/unit-4-game/">
+                                                <img class="d-block w-100 pf-modal-img" id="rcb4_1">
+                                            </a>
+                                        </div> -->
+                    <!-- card body -->
+                    <div class="card-body">
+                        <p id="toLink">
+                            <a href="https://seakim.github.io/TriviaGame/"><i><b>CLICK THIS</b> AND PLAY THE GAME !!!</i></a>
+                        </p>
+                        <h5 class="card-title">Rutgers Coding Bootcamp - HW5: Trivia Game</h5>
+                        <p class="card-text">
+                            <b>Basic Option</b>
+                            <br>
+                            <i>* The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.</i>
+                            <br><br>
+                            <b>Advanced Option</b>
+                            <br>
+                            <i>* trivia game shows only one question until the player answers it or their time runs out.
+                                <br>* If the player selects the correct answer, show a screen congratulating them for choosing the right option. After a few seconds, display the next question -- do this without user input.
+                                <br>* If the player chooses the wrong answer, tell the player they selected the wrong option and then display the correct answer. Wait a few seconds, then show the next question.
+                                <br>* On the final screen, show the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
+                            </i>
+
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </div>
 
                 </div>
@@ -270,13 +369,13 @@
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="d-block w-100 inner-img" id="img_1-1">
+                                <img class="d-block w-100 pf-modal-img" id="img_1-1">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 inner-img" id="img_1-2">
+                                <img class="d-block w-100 pf-modal-img" id="img_1-2">
                             </div>
                             <div class="carousel-item">
-                                <img class="d-block w-100 inner-img" id="img_1-3">
+                                <img class="d-block w-100 pf-modal-img" id="img_1-3">
                             </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -307,8 +406,6 @@
             </div>
         </div>
     </div>
-
-
 
 
 
