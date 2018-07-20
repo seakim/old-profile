@@ -5,58 +5,43 @@
     <meta charset="utf-8">
     <meta name="Viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=dege">
-    <title>Sean Kim</title>
+    <meta name="description" content="Portfolio of Sean Kim, Full Stack Developer based in NY/NJ">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, JQuery, web, development, front end, full stack development, websites, sites, portfolio, responsive, Sean Kim">
+
+    <title>Sean Kim | Full Stack Developer</title>
 
     <!-- Link Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-    <!-- Link JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <!-- Link CSS, Javascript -->
-    <link rel='stylesheet' href='./assets/css/style.css' type='text/css'>
-    <script defer src="assets/js/pageAction.js"></script>
-    <script type='text/javascript' src='assets/js/script.js'> </script>
+    <!-- icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- Animation -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
-    <!-- Google Maps API call -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcOgHEqu_cMFWOiYiOHjE3fR7flQniwdQ" async
-        defer></script>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Pacifico" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" type="text/css" href="./assets/css/animate.css">
+    
+    <!-- CSS & Javascript -->
+    <link rel='stylesheet' href='./assets/css/style.css' type='text/css'>
+    <!-- <script defer src="assets/js/pageAction.js"></script> -->
+    <script type='text/javascript' src='assets/js/script.js'> </script>
 </head>
 
 
+<body data-spy="scroll" data-target="#main-nav">
+    <!-- background -->
+    <video autoplay muted loop id="background_video">
+        <source src="assets/img/32835481-preview.mp4" type="video/mp4">
+    </video>
 
-<body>
-    <!-- background with banner fixed-->
-    <div class="background_banner">
-        <video autoplay muted loop id="background_video">
-            <source src="assets/img/32835481-preview.mp4" type="video/mp4">
-        </video>
-
-
-
+    <!-- intro -->
+    <div class="container welcome">
         <!-- nav -->
-        <div class="nav_1">
+        <div class="nav_1 row">
             <nav class="navbar navbar-expand-lg navbar-light nav-2">
-
-                <!-- Not in use -->
-                <a class="navbar-brand" id="item_1" href="#">Welcome!</a>
-
-                <!-- Menu -->
                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="button_1">
                     <span class="navbar-toggler-icon"></span>
@@ -83,86 +68,189 @@
             </nav>
         </div>
 
-        <!-- banner text area -->
-        <div class="banner_text_1">
-            <h1>Hi, I'm Sean,</h1>
-            <h3>a student of Rutgers University Coding Bootcamp,</h3>
-            <h3>currently studying to become a full-stack developer.</h3>
+        <!-- banner area -->
+        <div class="row">
+            <div class="welcome-txt col-12">
+                <h1>Hi, I'm Sean,</h1>
+                <h3>a student of Rutgers University Coding Bootcamp,</h3>
+                <h3>currently studying to become a full-stack developer.</h3>
+            </div>
         </div>
-
-        <div class="banner_text_2">
-            <a href="https://www.shutterstock.com/video/clip-32835481-artificial-intelligence-ai)-brain-animation-data-mining">
-                image source: https://www.shutterstock.com/</a>
+        <div class="background_source">
+            <a href="https://www.shutterstock.com/video/clip-32835481-artificial-intelligence-ai)-brain-animation-data-mining">image source: https://www.shutterstock.com/</a>
         </div>
+    </div>
 
-
-        <!-- outer container area -->
-        <div class="outer_container">
-
-            <!--  -->
-            <!-- portfolio area -->
-            <!--  -->
-
-            <div class="pf_container card" id="portfolio">
-                <h1>Portfolio</h1>
-
-                <div class="inner_container row">
-                    <div class="card_1 col-lg-4" id="rcb4">
-                        <div class="card pf-img img-1" id="rcb4_1" data-toggle="modal" data-target="#rcb4Modal"></div>
-                    </div>
-                    <div class="card_1 col-lg-4" id="rcb4">
-                        <div class="card pf-img img-1" id="rcb5_1" data-toggle="modal" data-target="#rcb5Modal"></div>
-                    </div>
-                    <div class="card_1 col-lg-4 pftemp">
-                        <div class="card sp-img img-3" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note">
-                            <b>Placeholder Image</b>
-                        </p>
-                    </div>
-                    <div class="card_1 col-lg-4 pftemp">
-                        <div class="card sp-img img-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note">
-                            <b>Placeholder Image</b>
-                        </p>
-                    </div>
-                    <div class="card_1 col-lg-4 pftemp">
-                        <div class="card sp-img img-5" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note">
-                            <b>Placeholder Image</b>
-                        </p>
-                    </div>
-                    <div class="card_1 col-lg-4 pftemp">
-                        <div class="card sp-img img-6" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
-                        <p class="pf-placeholder-note">
-                            <b>Placeholder Image</b>
-                        </p>
+    <!-- About me -->
+    <div>
+        <section class="container about-me col-12" id="about-me">
+            <div class="row">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="ctnrbox row">
+                <div class="col-6 about">
+                    <h3><span class="fa fa-instagram"></span> Who I am</h3>
+                    <p>I am (or soon to be) a full-stack web developer currently looking for opportunities in NY/NJ area.  
+                        I’m experienced in HTML/CSS/Javascript, JQuery, Java, Ruby on Rails, and SQL (React, Node.js, Express, MongoDB will be covered).<br>
+                        I have Bachelor’s degree (magna cum laude) in Mathematics and minor in Computer Science, 
+                        and currently in a Full Stack Development course through Rutgers University Coding Bootcamp.
+                    </p>
+                </div>
+                <div class="col-6 about-img" id="about1">
+                </div>  
+                <div class="col-6 about-img" id="about2">
+                </div>
+                <div class="col-6 about">
+                    <h3><span class="fas fa-child"></span> More about Me</h3>
+                    <p>One of my greatest talents is dedication.  When timelines are tight, the challenge is impossible and others say it can’t be done - 
+                        that’s when I get really excited and jump in to make it happen.<br></p>
+                    <div class="about-more">
+                        <i><span>Feel free to check out my <a href="#">RESUME.</a></span></i><br><br>
+                        <a href="https://github.com/seakim"><h1 class="fab fa-github"></h1></a>&emsp;&emsp;
+                        <a href="https://www.linkedin.com/in/seankhkim"><h1 class="fab fa-linkedin"></h1></a>
                     </div>
                 </div>
+                <div class="next col-12"><h1><a href="#"><span class="fas fa-angle-double-down"></span></a></h1></div>      
             </div>
+        </section>
+    </div>
 
 
+    <!-- EXPERIENCE -->
+    <div class="container-fluid experience" align="right"> 
+        <h2>EXPERIENCE</h2>
+        <table>
+            <tr>
+                <td><div class="experience-bar"><div class="ex htmlCss"></div></div>
+                </td>
+                <td>HTML/CSS</td>
+            </tr>
+            <tr>
+                <td><div class="experience-bar"><div class="ex js"></div></div>
+                </td>
+                <td>JavaScript</td>
+            </tr>
+            <tr>
+                <td><div class="experience-bar"><div class="ex jquery"></div></div>
+                </td>
+                <td>JQuery</td>
+            </tr>
+            <tr>
+                <td><div class="experience-bar"><div class="ex node"></div></div>
+                </td>
+                <td>node.js</td>
+            </tr>
+            <tr>
+                <td><div class="experience-bar"><div class="ex java"></div></div>
+                </td>
+                <td>Java</td>
+            </tr>
+            <tr>
+                <td><div class="experience-bar"><div class="ex ror"></div></div>
+                </td>
+                <td>Ruby on Rails</td>
+            </tr>
+            <tr>
+                <td><div class="experience-bar"><div class="ex sql"></div></div>
+                </td>
+                <td>SQL</td>
+            </tr>
+        </table>
+    </div>
 
-            <!-- botton video -->
-            <div class="ftr_container card">
+    <!-- <div class="banner_2 row">
+        <h2 class="col-8">Buffett replied, <br>“No. You’ve got it wrong, Mike. <br>Everything you didn’t circle just became your Avoid-At-All-Cost list. 
+            No matter what, these things get no attention from you until you’ve succeeded with your top 5.”</h2>
+    </div> -->
 
-                <section>
-                    <div class="ftr_info">
-                        <p>&copy Sean Kim</p>
-                        <br>
-                        <p>
-                            <a href="#">dev.seakim@gmail.com</a>
-                        </p>
-                        <br>
-                        <p>
-                            <a href="https://github.com/seakim">https://github.com/seakim</a>
-                        </p>
+    <!-- Portfolio -->
+    <div class="row">
+        <section class="container about-me col-12" id="about-me">
+            <div class="row">
+                <h2>PORTFOLIO</h2>
+            </div>
+            <div class="inner_container row">
+                <div class="card_1 col-lg-4" id="rcb4">
+                    <div class="card pf-img img-1" id="rcb4_1" data-toggle="modal" data-target="#rcb4Modal"></div>
+                </div>
+                <div class="card_1 col-lg-4" id="rcb4">
+                    <div class="card pf-img img-1" id="rcb5_1" data-toggle="modal" data-target="#rcb5Modal"></div>
+                </div>
+                <div class="card_1 col-lg-4 pftemp">
+                    <div class="card sp-img img-3" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                    <p class="pf-placeholder-note">
+                        <b>Placeholder Image</b>
+                    </p>
+                </div>
+                <div class="card_1 col-lg-4 pftemp">
+                    <div class="card sp-img img-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                    <p class="pf-placeholder-note">
+                        <b>Placeholder Image</b>
+                    </p>
+                </div>
+                <div class="card_1 col-lg-4 pftemp">
+                    <div class="card sp-img img-5" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                    <p class="pf-placeholder-note">
+                        <b>Placeholder Image</b>
+                    </p>
+                </div>
+                <div class="card_1 col-lg-4 pftemp">
+                    <div class="card sp-img img-6" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
+                    <p class="pf-placeholder-note">
+                        <b>Placeholder Image</b>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Contact -->
+    <div class="row">
+        <section class="container contact-area col-12" id="contact">
+            <div class="row">
+                <h2>CONTACT ME</h2>
+            </div>
+            <div class="container">
+                <form id="contact-form" method="post" action="http://dev.seakim@gmail.com">
+                    <div class="contact row">
+                    <!-- <div class="col-12"> -->
+                        <label class="col-3" for="form-name">NAME:</label>
+                        <input class="col-6" name="form-name" id="form-name" type="text" placeholder="your name" required><br>
                     </div>
-                    <video autoplay muted loop id="ftr_video">
-                        <source src="assets/img/3813743-preview.mp4" type="video/mp4">
-                    </video>
-                </section>
+                    <div class="contact row">
+                        <label class="col-3" for="form-email">EMAIL:</label>
+                        <input class="col-6" name="form-email" id="form-email" type="email" placeholder="your email" required>
+                    </div>
+                    <div class="contact row">
+                        <label class="col-3" for="form-msg">MESSAGE:</label>
+                        <textarea class="col-6" name="form-msg" id="form-msg" placeholder="your message" required></textarea>
+                    </div>
+                    <button class="contact-btn" type="submit" class="button">Submit</button>
+                </form>
             </div>
-        </div>
+        </section>
+    </div>
+
+    <!-- botton video -->
+    <div>
+        <section class="ftr_area">
+            <div class="ftr_info">
+                <a href="https://github.com/seakim"><h1 class="fab fa-github"></h1></a>&emsp;&emsp;
+                <a href="https://www.linkedin.com/in/seankhkim"><h1 class="fab fa-linkedin"></h1></a><br>
+                <p>&copy Sean Kim</p>
+                <br>
+                <p>
+                    <a href="#">dev.seakim@gmail.com</a>
+                </p>
+                <br>
+                <p>
+                    <a href="https://github.com/seakim">https://github.com/seakim</a>
+                </p>
+            </div>
+            <video autoplay muted loop id="ftr_video">
+                <source src="assets/img/3813743-preview.mp4" type="video/mp4">
+            </video>
+        </section>
     </div>
 
 
@@ -170,48 +258,6 @@
 
 
     <!-- MODAL AREA -->
-
-    <!-- about modal area -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLongTitle">About Sean</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <img id="profile-1" src="assets/portfolio-img/profile/profile_1.jpg">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime ab asperiores, soluta veniam accusamus
-                        dolorum! Maiores, ipsa sint. Repudiandae labore commodi culpa maxime eveniet molestiae harum quaerat
-                        id voluptatum sit!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ut, sit facere itaque est pariatur autem
-                        beatae quaerat perferendis veritatis fugiat recusandae cum blanditiis voluptatibus maxime quis inventore
-                        harum quos.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, adipisci hic! Soluta magnam corrupti
-                        aliquam eligendi saepe nostrum sequi vero laudantium tempore deserunt, ad inventore. Quam alias cum
-                        cumque quo.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis sunt exercitationem accusantium itaque
-                        ab illo unde, iste repudiandae at expedita maxime earum quidem accusamus perferendis eligendi placeat
-                        explicabo pariatur eaque?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt consequatur molestias nam, fugiat
-                        totam unde. Maiores, voluptatibus repudiandae officia autem iste laboriosam dolor, incidunt repellendus
-                        accusamus voluptas minima, inventore nesciunt?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sunt tempore molestias vel laudantium
-                        eligendi itaque! Fugit sunt illum earum quidem dolorem debitis quod a quasi expedita, excepturi ex
-                        provident!
-                    </p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum iste, illum minus repellat nostrum possimus
-                        blanditiis atque aspernatur inventore aperiam voluptas beatae, similique saepe voluptatibus necessitatibus!
-                        Nesciunt amet rerum quo.</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- contact modal area -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -413,12 +459,6 @@
     </div>
 
 
-
-
-
-
-
-    <script src="assets/js/script.js"></script>
 
 </body>
 

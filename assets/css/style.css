@@ -1,22 +1,51 @@
 
-/* background with fixed banner */
-.background_banner {
-    position:relative;
-    color: white;
-}
+/*******************************************
+                background
+*******************************************/
 #background_video {
     position: fixed;
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
+    max-width: 100%; 
+    /* min-height: 100%; */
+    /* max-height: 100%; */
     width: auto;
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    /* background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat; */
-    /* background-size: cover; */
-    /* transition: 1s opacity; */
+}
+section {
+    background: white;
+    margin: auto;
+}
+/*******************************************
+                intro
+*******************************************/
+.welcome {
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.welcome-txt {
+    margin-top: 15%;
+    color: rgba(255,255,255,0.9);
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px yellow;
+}
+.welcome-txt h1{
+    font-size: 3.8em;
+}
+.background_source {
+    margin: 13% 3% 0 0;
+    font-size: 0.7em;
+}
+.background_source a {
+    color: rgba(255,255,255,0.4);
+    float: right;
 }
 
 /* nav area */
@@ -45,51 +74,65 @@
     color: rgba(255,255,255,0.5);
 }
 
-/* wanted to use this to go to #portfolio slowly, but doesn't seem to work this way*/
-/* #easy_transition {
-    transition: all 3s ease 0s;
-} */
+/*******************************************
+                ABOUT ME
+*******************************************/
 
-/* banner text area */
-.banner_text_1 {
-    position: absolute;
-    top: 50vh;
-    margin: 20px;
+.about-me {
+    padding: 3rem 0;
+    text-align: center;
+    height: 120vh;
 }
-.banner_text_1 h1{
-    font-size: 3.8em;
-    margin-bottom: 13px;
+.about-me h2 {
+    margin: 2rem 0;
+    width: 100%;
 }
-.banner_text_2 {
-    position: absolute;
-    top: 90vh;
-    right: 2%;
-    float: right;
-    margin-right: 5px;
-    font-size: 0.7em;
+.ctnrbox {
+    width: 90%;
+    margin: auto;
 }
-.banner_text_2 a {
-    color: rgba(255,255,255,0.4);
+.about-img {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
 }
-
-
-/* outer container area */
-.outer_container {
-    position: absolute;
-    top: 100vh;
-    margin: 2.5%;
-    margin-bottom: 5%;
-    width: 95%;
-    /* height: 100vh; */
-    z-index: 30;
-    background: rgb(255,255,255,0);
+#about1 {
+    background-image: url("../img/me/profile_1.jpg");
+}
+#about2 {
+    background-image: url("../img//me/img-7.jpeg");
 }
 
-/* portfolio area */
+.about {
+    margin: auto;
+}
+
+.about p {
+    text-align: left;
+}
+.about-more {
+    text-align: center;
+    margin: auto;
+}
+.next {
+    margin-top: 2rem;
+}
+
+.banner_2 {
+    text-align: left;
+    margin: 20vh 30px;
+
+    color: rgba(255,255,255,1);
+}
+
+
+/*******************************************
+                PORTFOLIO
+*******************************************/
 .pf_container {
-    margin: 2.5%;
     margin-bottom: 5%;
-    width: 95%;
     z-index: 50;
     background-image: url("../img/background-2.png");
     background-size: cover;
@@ -139,25 +182,87 @@
     color: rgba(47, 70, 143, 0.4);
     font-size: 0.5em;
 }
+/*******************************************
+                experience
+*******************************************/
+.experience {
+    border: 2px solid white;
+    padding: 3rem 0;
+    text-align: center;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px yellow;
 
-/* footer area */
-.ftr_container {
+}
+.experience h2 {
+    margin: 2rem 0;
+}
+.experience-bar {
+    background-color: darkgray;
+    width: 500px; 
+    height: 20px;
+    margin: 1rem;
+}
+.ex {
+    background-color: white;
+    height: 18px; 
+
+}
+.htmlCss {
+    width: 50%; 
+}
+.js {
+    width: 60%; 
+}
+.jquery {
+    width: 70%; 
+}
+.node {
+    width: 10%; 
+}
+.java {
+    width: 40%; 
+}
+.ror {
+    width: 50%; 
+}
+.sql {
+    width: 70%; 
+}
+
+/*******************************************
+                contact
+*******************************************/
+.contact-area {
+    border: 2px solid white;
+    padding: 5rem 0;
+    text-align: center;
+    height: 85vh;
+    background: #202325;
+    color: white;
+}
+.contact-area h2 {
+    width: 100%;
+}
+.contact {
+    margin: 2rem;
+}
+.contact-btn {
+    margin-top: 20px;
+}
+#form-msg {
+    height: 8rem;
+}
+
+/*******************************************
+                footer area
+*******************************************/
+.ftr_area {
+    border: 2px solid white;
     padding: 3px;
     background: rgb(255,255,255,1);
-}
-section {
     height: 30vh;
     overflow: hidden;
     position: relative;
-    background: rgb(255,255,255,1);
-}
-#ftr_video {
-    left: 50%;
-    min-height: 100%;
-    min-width: 100%;
-    position: absolute;
-    top: 40%;
-    transform: translate(-50%, -40%);
 }
 .ftr_info {
     position: absolute;
@@ -165,6 +270,16 @@ section {
     bottom: 5%;
     z-index: 2;
 }
+
+#ftr_video {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -40%);
+}
+
 .ftr_info p {
     margin: 0;
     float: right;
@@ -174,16 +289,9 @@ section {
 }
 
 
-/* portfolio modal */
-
-/* #test-img {
-    background-image: url("../img/img-2.jpeg");
-    width: 300px;
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+/*******************************************
+                modal
+*******************************************/
 .pf-modal-img {
     height: 500px;
     background-size: contain;
@@ -258,7 +366,7 @@ section {
 
 
 
-
+/* 
 @media only screen and (max-width : 980px) {
 }
 
@@ -286,4 +394,4 @@ section {
     .banner_text_2 a {
         font-size: 0.4em;
     }
-}
+} */
