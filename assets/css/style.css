@@ -2,16 +2,15 @@
 /*******************************************
                 background
 *******************************************/
+.background {
+    width: 100%;
+    height: 100vh;
+}
 #background_video {
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 100%;
-    max-width: 100%; 
-    /* min-height: 100%; */
-    /* max-height: 100%; */
-    width: auto;
-    height: auto;
+    width: 100%;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -40,7 +39,8 @@ section {
     font-size: 3.8em;
 }
 .background_source {
-    margin: 13% 3% 0 0;
+    float: right;
+    margin: 17% 3% 0 0;
     font-size: 0.7em;
 }
 .background_source a {
@@ -82,6 +82,7 @@ section {
     padding: 3rem 0;
     text-align: center;
     height: 120vh;
+    width: 100%;
 }
 .about-me h2 {
     margin: 2rem 0;
@@ -131,22 +132,14 @@ section {
 /*******************************************
                 PORTFOLIO
 *******************************************/
-.pf_container {
-    margin-bottom: 5%;
-    z-index: 50;
-    background-image: url("../img/background-2.png");
-    background-size: cover;
+.portfolio-area {
+    padding: 5rem 0;
+    text-align: center;
 }
-.pf_container h1 {
-    margin: 5% 0 2% 10%;
-    letter-spacing: 4px;
-    font-weight: bold;
-    z-index: 100;
-    color: black;
-}
+
 .inner_container {
     margin: 20px;
-    background: rgba(4, 28, 48, 0.8);
+    /* background: rgba(4, 28, 48, 0.8); */
 }
 
 .card_1 {
@@ -154,6 +147,7 @@ section {
     position: relative;
 }
 .pf-img {
+    border: 2px solid black;
     height: 300px;
     margin: 20px;
     background-size: contain;
@@ -185,16 +179,20 @@ section {
 /*******************************************
                 experience
 *******************************************/
-.experience {
+.experience-area {
+    background: #202325;
     border: 2px solid white;
     padding: 3rem 0;
     text-align: center;
     color: aliceblue;
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px yellow;
-
 }
-.experience h2 {
+
+.experience-area h2 {
     margin: 2rem 0;
+}
+.experience-area table {
+   margin: auto; 
 }
 .experience-bar {
     background-color: darkgray;
@@ -233,6 +231,7 @@ section {
                 contact
 *******************************************/
 .contact-area {
+    width: 100%;
     border: 2px solid white;
     padding: 5rem 0;
     text-align: center;
@@ -263,30 +262,38 @@ section {
     height: 30vh;
     overflow: hidden;
     position: relative;
+    color: white;
+    text-align: center;
 }
 .ftr_info {
     position: absolute;
-    right: 2%;
-    bottom: 5%;
-    z-index: 2;
+    width: 100%;
+    height: 100%;
+    /* float: right; */
+    /* right: 2%;
+    bottom: 5%; */
+    z-index: 10;
 }
-
+.ftr_img_source {
+    float: left;
+    margin: 2% 0 0 2%;
+    font-size: 0.7em;
+}
+.ftr-links {
+    margin-top: 10%;
+    /* float: right; */
+}
 #ftr_video {
     position: absolute;
     top: 40%;
     left: 50%;
+    /* height: 30vh; */
+
     min-height: 100%;
     min-width: 100%;
     transform: translate(-50%, -40%);
 }
 
-.ftr_info p {
-    margin: 0;
-    float: right;
-}
-.ftr_info p a {
-    color: rgb(255,255,255,1);
-}
 
 
 /*******************************************
