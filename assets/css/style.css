@@ -1,13 +1,16 @@
-
+body {
+    background: #202325;
+}
 /*******************************************
                 background
 *******************************************/
-.background {
+/* .background {
     width: 100%;
     height: 100vh;
-}
+} */
 #background_video {
     position: absolute;
+    /* height: 100vh; */
     top: 50%;
     left: 50%;
     width: 100%;
@@ -19,9 +22,28 @@ section {
     margin: auto;
 }
 /*******************************************
+                color:hover
+*******************************************/
+.blue{
+    color: skyblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
+}
+.hover-pink:hover{
+    color: pink;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
+}
+.hover-blue:hover{
+    color: skyblue;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
+}
+.hover-yellow:hover{
+    color: yellow;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
+}
+/*******************************************
                 intro
 *******************************************/
-.welcome {
+.welcome-area {
     text-align: center;
     height: 100vh;
     width: 100%;
@@ -31,16 +53,28 @@ section {
 }
 
 .welcome-txt {
-    margin-top: 15%;
-    color: rgba(255,255,255,0.9);
+    margin-top: 16%;
+    color: rgba(255,255,255,1);
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px yellow;
 }
 .welcome-txt h1{
-    font-size: 3.8em;
+    font-size: 2.8em;
 }
+.social {
+    margin: 2% auto;
+    text-align: center;
+}
+.social a{
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px white;
+    font-size: 2.5em;
+    display: inline;
+    margin: 0;
+}
+
 .background_source {
     float: right;
-    margin: 17% 3% 0 0;
+    margin: 5% 3% 0 0;
     font-size: 0.7em;
 }
 .background_source a {
@@ -49,42 +83,39 @@ section {
 }
 
 /* nav area */
-.nav_1 {
-    margin: 20px;
-}
+
 .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,255,255,0);
 } 
-#item_1 {
-    color: rgba(255,255,255,0);
-    font-weight: bold;
-    font-size: 1.7em;
-}
-#item_2 {
-    color: rgba(255,255,255,0.5);
-}
-#item_2:hover {
+#home {
     color: rgba(255,255,255,1);
     font-weight: bold;
+    font-size: 4em;
 }
-#item_3 {
+#home:hover {
+    color: pink;
+}
+.nav-item .nav-link.item_2 {
     color: rgba(255,255,255,0.5);
+}
+.nav-item .nav-link.item_2:hover {
+    color: rgba(255,255,255,1);
+    font-weight: bold;
 }
 
 /*******************************************
                 ABOUT ME
 *******************************************/
 
-.about-me {
+.about-area {
     padding: 3rem 0;
     text-align: center;
-    height: 120vh;
     width: 100%;
 }
-.about-me h2 {
+.about-area h2 {
     margin: 2rem 0;
     width: 100%;
 }
@@ -124,7 +155,6 @@ section {
 .banner_2 {
     text-align: left;
     margin: 20vh 30px;
-
     color: rgba(255,255,255,1);
 }
 
@@ -139,7 +169,6 @@ section {
 
 .inner_container {
     margin: 20px;
-    /* background: rgba(4, 28, 48, 0.8); */
 }
 
 .card_1 {
@@ -176,6 +205,7 @@ section {
     color: rgba(47, 70, 143, 0.4);
     font-size: 0.5em;
 }
+
 /*******************************************
                 experience
 *******************************************/
@@ -195,37 +225,23 @@ section {
    margin: auto; 
 }
 .experience-bar {
-    background-color: darkgray;
+    /* background-color: darkgray; */
+    background-color: white;
     width: 500px; 
     height: 20px;
     margin: 1rem;
 }
 .ex {
-    background-color: white;
-    height: 18px; 
-
+    background-color: #202325;
+    height: 19px; 
 }
-.htmlCss {
-    width: 50%; 
-}
-.js {
-    width: 60%; 
-}
-.jquery {
-    width: 70%; 
-}
-.node {
-    width: 10%; 
-}
-.java {
-    width: 40%; 
-}
-.ror {
-    width: 50%; 
-}
-.sql {
-    width: 70%; 
-}
+.htmlCss { width: 50%; }
+.js { width: 60%; }
+.jquery { width: 60%; }
+.node { width: 10%; }
+.java { width: 40%; }
+.ror { width: 50%; }
+.sql { width: 60%; }
 
 /*******************************************
                 contact
@@ -235,7 +251,6 @@ section {
     border: 2px solid white;
     padding: 5rem 0;
     text-align: center;
-    height: 85vh;
     background: #202325;
     color: white;
 }
@@ -275,12 +290,13 @@ section {
     z-index: 10;
 }
 .ftr_img_source {
+    color: #202325;
     float: left;
     margin: 2% 0 0 2%;
     font-size: 0.7em;
 }
 .ftr-links {
-    margin-top: 10%;
+    margin-top: 7%;
     /* float: right; */
 }
 #ftr_video {
