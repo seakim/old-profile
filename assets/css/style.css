@@ -1,5 +1,7 @@
 body {
     background: #202325;
+    font-family: 'Raleway', sans-serif;
+        /* font-size: 48px; */
 }
 /*******************************************
                 background
@@ -24,6 +26,12 @@ section {
 /*******************************************
                 color:hover
 *******************************************/
+.hover-bounce {
+    padding: .2em;
+}
+/* .social a span:hover {
+    animation: bounce 1s;
+ } */
 .blue{
     color: skyblue;
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
@@ -51,7 +59,6 @@ section {
     padding: 0;
     margin: 0;
 }
-
 .welcome-txt {
     margin-top: 16%;
     color: rgba(255,255,255,1);
@@ -74,7 +81,7 @@ section {
 
 .background_source {
     float: right;
-    margin: 5% 3% 0 0;
+    margin: 15% 3% 0 0;
     font-size: 0.7em;
 }
 .background_source a {
@@ -84,12 +91,27 @@ section {
 
 /* nav area */
 
-.custom-toggler .navbar-toggler-icon {
+/* .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .custom-toggler.navbar-toggler {
     border-color: rgb(255,255,255,0);
-} 
+}  */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
+}
+.navbar-brand {
+    padding-left: 5%;
+}
+.menu {
+    padding-right: 5%;
+    list-style-type: none;
+}
 #home {
     color: rgba(255,255,255,1);
     font-weight: bold;
@@ -99,7 +121,7 @@ section {
     color: pink;
 }
 .nav-item .nav-link.item_2 {
-    color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.7);
 }
 .nav-item .nav-link.item_2:hover {
     color: rgba(255,255,255,1);
@@ -118,6 +140,7 @@ section {
 .about-area h2 {
     margin: 2rem 0;
     width: 100%;
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
 }
 .ctnrbox {
     width: 90%;
@@ -166,7 +189,9 @@ section {
     padding: 5rem 0;
     text-align: center;
 }
-
+.portfolio-area h2 {
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
 .inner_container {
     margin: 20px;
 }
@@ -243,6 +268,10 @@ section {
 .ror { width: 50%; }
 .sql { width: 60%; }
 
+.logo i {
+    font-size: 4em;
+    padding: 0.5em;
+}
 /*******************************************
                 contact
 *******************************************/
@@ -252,6 +281,9 @@ section {
     padding: 5rem 0;
     text-align: center;
     background: #202325;
+    color: white;
+}
+.contact-btn {
     color: white;
 }
 .contact-area h2 {
@@ -290,7 +322,9 @@ section {
     z-index: 10;
 }
 .ftr_img_source {
-    color: #202325;
+    /* color: #202325; */
+    color: white;
+    text-shadow: black;
     float: left;
     margin: 2% 0 0 2%;
     font-size: 0.7em;
@@ -389,32 +423,65 @@ section {
 
 
 
-/* 
+
 @media only screen and (max-width : 980px) {
 }
 
 @media only screen and (max-width : 768px) {
-
-    .banner_text_1 h1 {
-        font-size: 2.4em;
+    .welcome-txt {
+        margin-top: 28%;
     }
-    .banner_text_1 h3{
-        font-size: 1em;
+    .welcome-txt h1 {
+        font-size: 2.3em;
+    }
+    .ftr-links {
+        margin-top: 10%;
+    }
+    #home {
+        padding: 0;
+    }
+    .menu {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .about {
+        padding: 0 5px;
+    }
+    .about-img {
+        height: 340px;
     }
 }
 
 @media only screen and (max-width : 640px) {
-    #rcb4_1 {
-        width: 90%;
-    }
 }
 
 @media only screen and (max-width : 425px) {
-
-    .banner_text_1 h3 {
-        font-size: 0.8em;
+    .welcome-txt {
+        margin-top: 30%;
     }
-    .banner_text_2 a {
-        font-size: 0.4em;
+    .experience-bar {
+        width: 200px;
     }
-} */
+    .ftr-links {
+        margin-top: 30%;
+    }
+    .contact label {
+        font-size: 0.7em;
+    }
+    #home {
+        padding: 0;
+    }
+    .menu {
+        padding: 0;
+        margin: 0 auto;
+    }
+    .item_2 {
+        padding: 8px;
+    }
+    .about-img-1 {
+        margin-bottom: 20px;
+    }
+    .about-img-2 {
+        display: none;
+    }
+}
