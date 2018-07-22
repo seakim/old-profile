@@ -180,57 +180,6 @@ section {
     margin: 20vh 30px;
     color: rgba(255,255,255,1);
 }
-
-
-/*******************************************
-                PORTFOLIO
-*******************************************/
-.portfolio-area {
-    padding: 5rem 0;
-    text-align: center;
-}
-.portfolio-area h2 {
-    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
-}
-.inner_container {
-    margin: 20px;
-}
-
-.card_1 {
-    padding: 0;
-    position: relative;
-}
-.pf-img {
-    border: 2px solid black;
-    height: 300px;
-    margin: 20px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-.sp-img {
-    height: 300px;
-    margin: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
-}
-.pf-img:hover {
-    margin: 10px;
-    height: 320px;
-    transition: all 0.5s ease 0s;
-}
-.pf-placeholder-note {
-    position: absolute;
-    z-index: 50;
-    top: 10%;
-    right: 8%;
-    color: rgba(47, 70, 143, 0.4);
-    font-size: 0.5em;
-}
-
 /*******************************************
                 experience
 *******************************************/
@@ -273,6 +222,39 @@ section {
     padding: 0.5em;
 }
 /*******************************************
+                PORTFOLIO
+*******************************************/
+.portfolio-area {
+    padding: 5rem 0;
+    text-align: center;
+}
+.portfolio-area h2 {
+    text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px white;
+}
+.pf-img {
+    border: 1px solid lightgray;
+    height: 320px;
+    margin: 10px 5px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.pf-img:hover {
+    margin: 10px 0;
+    height: 320px;
+    background-size: contain;
+    transition: all 1s ease 0s;
+}
+.pf-placeholder-note {
+    position: absolute;
+    z-index: 50;
+    top: 10%;
+    right: 8%;
+    color: rgba(47, 70, 143, 0.4);
+    font-size: 0.5em;
+}
+/*******************************************
                 contact
 *******************************************/
 .contact-area {
@@ -284,7 +266,7 @@ section {
     color: white;
 }
 .contact-btn {
-    color: white;
+    color: #202325;
 }
 .contact-area h2 {
     width: 100%;
@@ -294,11 +276,11 @@ section {
 }
 .contact-btn {
     margin-top: 20px;
+    font-weight: bold;
 }
 #form-msg {
     height: 8rem;
 }
-
 /*******************************************
                 footer area
 *******************************************/
@@ -343,19 +325,24 @@ section {
     min-width: 100%;
     transform: translate(-50%, -40%);
 }
-
-
-
 /*******************************************
                 modal
 *******************************************/
+.description {
+    text-align: center;
+}
+.card-title {
+    text-align: center;
+}
+.tool-used {
+    float: right;
+}
 .pf-modal-img {
     height: 500px;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
-
 #toLink {
     margin: -2% 0 0 0;
     float: right;
@@ -376,47 +363,27 @@ section {
 #profile-1 {
     width: 100%;
 }
-/* images */
-#rcb4_1 {
-    background-image: url("../portfolio-img/rcb4/crystal_collector.png");
-}
-#rcb5_1 {
-    background-image: url("../portfolio-img/rcb5/trivia1.png");
-}
-#rcb5_2 {
-    background-image: url("../portfolio-img/rcb5/trivia2.png");
-}
-#rcb5_3 {
-    background-image: url("../portfolio-img/rcb5/trivia3.png");
-}
-#rcb5_4 {
-    background-image: url("../portfolio-img/rcb5/trivia4.png");
-}
 
-#img_1-1 {
-    background-image: url("../img/img-4.jpeg");
-}
-#img_1-2 {
-    background-image: url("../img/img-5.png");
-}
-#img_1-3 {
-    background-image: url("../img/img-6.jpg");
-}
-.img-2 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-3 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-4 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-5 {
-    background-image: url("../img/img-1.jpg");
-}
-.img-6 {
-    background-image: url("../img/img-1.jpg");
-}
+/* portfolio screenshots */
+#foogle-1 { background-image: url("../img/portfolio/foogle/foogle-1.png"); }
+#foogle-2 { background-image: url("../img/portfolio/foogle/foogle-2.png"); }
+#foogle-3 { background-image: url("../img/portfolio/foogle/foogle-3.png"); }
+#foogle-4 { background-image: url("../img/portfolio/foogle/foogle-4.png"); }
+#giphy-1 { background-image: url("../img/portfolio/giphy/giphy-1.png"); }
+#giphy-2 { background-image: url("../img/portfolio/giphy/giphy-2.png"); }
+#trainScheduler-1 { background-image: url("../img/portfolio/train-scheduler/train-scheduler-1.png"); }
+#trainScheduler-2 { background-image: url("../img/portfolio/train-scheduler/train-scheduler-2.png"); }
+#trivia-1 { background-image: url("../img/portfolio/trivia/trivia-1.png"); }
+#trivia-2 { background-image: url("../img/portfolio/trivia/trivia-2.png"); }
+#trivia-3 { background-image: url("../img/portfolio/trivia/trivia-3.png"); }
+#trivia-4 { background-image: url("../img/portfolio/trivia/trivia-4.png"); }
+
+#temp-1 { background-image: url("../img/others/img-1.jpg"); }
+#temp-2 { background-image: url("../img/others/img-2.jpeg"); }
+#temp-3 { background-image: url("../img/others/img-3.jpeg"); }
+#temp-4 { background-image: url("../img/others/img-4.jpeg"); }
+#temp-5 { background-image: url("../img/others/img-5.png"); }
+#temp-6 { background-image: url("../img/others/img-6.jpg"); }
 
 
 
@@ -463,7 +430,7 @@ section {
         width: 200px;
     }
     .ftr-links {
-        margin-top: 30%;
+        margin-top: 15%;
     }
     .contact label {
         font-size: 0.7em;
