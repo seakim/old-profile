@@ -68,7 +68,9 @@
         <!-- banner area -->
         <div class="row">
             <div class="welcome-txt col-12">
-                <h1><span class="hover-blue"><b>Welcome to my digital home, I'm Sean.</b></span></h1><br>
+                <div class="typewriter">
+                    <h1><b>Hi, I'm Sean.</b></h1>
+                </div><br>
                 <h3><span class="hover-blue"><i>I am a student of Rutgers University Coding Bootcamp,</i></span></h3>
                 <h3><span class="hover-pink"><i>currently studying to become a <b>full-stack developer.</b></i></span></h3>
             </div>
@@ -98,10 +100,8 @@
                     and currently in a Full Stack Development course through Rutgers University Coding Bootcamp.
                 </p>
             </div>
-            <div class="col-xs-12 col-md-6  about-img about-img-1 invisible" id="about1">
-            </div>  
-            <div class="col-xs-12 col-md-6 about-img about-img-2 invisible" id="about2">
-            </div>
+            <div class="col-xs-12 col-md-6  about-img about-img-right invisible" id="about1"></div>  
+            <div class="col-xs-12 col-md-6 about-img about-img-left invisible" id="about2"></div>
             <div class="col-xs-12 col-md-6 about" id="about-more">
                 <h3><span class="fas fa-child"></span> More about Me</h3>
                 <p>One of my greatest talents is dedication.  When timelines are tight, the challenge is impossible and others say it can’t be done - 
@@ -116,6 +116,25 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-6 col-ls-12 about about-code">
+                <h3><span class="far fa-thumbs-up"></span> Fun Fact</h3>
+                <div id="typewriter-dev">
+                        <!-- <i class="far fa-thumbs-up"></i> -->
+
+
+                    <span class="var-highlight">var</span> sean = {<br>
+                        &emsp;&emsp;&emsp;name: <span class="string-highlight">'Sean Kim'</span>,<br>
+                        &emsp;&emsp;&emsp;title: <span class="string-highlight">'Full-Stack Developer'</span>,<br>
+                        &emsp;&emsp;&emsp;location: <span class="string-highlight">'NY/NJ area'</span>,<br>
+                        &emsp;&emsp;&emsp;Strength:[<span class="string-highlight">'Web-Development'</span>,<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="string-highlight">'Dedication'</span>,<br>
+                        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span class="string-highlight">'Learning New Things'</span>];<br>
+                    }; 
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 about-img about-img-right invisible" id="about3"></div>
+
             <div class="next col-12"><h1><a href="#experience-area"><span class="fas fa-angle-double-down"></span></a></h1></div>      
         </div>
     </section>
@@ -171,30 +190,29 @@
     </div>
 
     <!-- Portfolio -->
-    <section class="container-fluid portfolio-area invisible" id="portfolio-area">
+    <section class="container-fluid portfolio-area" id="portfolio-area">
         <h2>PORTFOLIO</h2>
         <div class="row">
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 item1 invisible">
                 <div class="card pf-img" id="foogle-2" data-toggle="modal" data-target="#foogle"></div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 item2 invisible">
                 <div class="card pf-img img-1" id="giphy-1" data-toggle="modal" data-target="#giphy"></div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 item3 invisible">
                 <div class="card pf-img" id="trainScheduler-1" data-toggle="modal" data-target="#train-scheduler"></div>
             </div>
-            <div class="col-lg-4 col-md-6">
+            <div class="col-lg-4 col-md-6 item4 invisible">
                 <div class="card pf-img" id="trivia-1" data-toggle="modal" data-target="#trivia"></div>
             </div>
 
-
-            <div class="card_1 col-lg-4 col-md-6 pftemp">
+            <div class="card_1 col-lg-4 col-md-6 pftemp item5 invisible">
                 <div class="card pf-img" id="temp-1" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
                 <p class="pf-placeholder-note">
                     <b>Placeholder Image</b>
                 </p>
             </div>
-            <div class="card_1 col-lg-4 col-md-6 pftemp">
+            <div class="card_1 col-lg-4 col-md-6 pftemp item6 invisible">
                 <div class="card pf-img" id="temp-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
                 <p class="pf-placeholder-note">
                     <b>Placeholder Image</b>
@@ -204,7 +222,7 @@
     </section>
     
     <!-- Contact -->
-    <section class="container-fluid contact-area invisible" id="contact-area">
+    <section class="container-fluid contact-area" id="contact-area">
         <div class="row">
             <h2>CONTACT ME</h2>
         </div>

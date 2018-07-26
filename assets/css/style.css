@@ -1,15 +1,11 @@
 body {
     background: #202325;
     font-family: 'Raleway', sans-serif;
-        /* font-size: 48px; */
+    justify-content: center;
 }
 /*******************************************
                 background
 *******************************************/
-/* .background {
-    width: 100%;
-    height: 100vh;
-} */
 #background_video {
     position: absolute;
     /* height: 100vh; */
@@ -29,9 +25,6 @@ section {
 .hover-bounce {
     padding: .2em;
 }
-/* .social a span:hover {
-    animation: bounce 1s;
- } */
 .blue{
     color: skyblue;
     text-shadow: 1px 1px 2px black, 0 0 25px white, 0 0 5px black;
@@ -64,9 +57,33 @@ section {
     color: rgba(255,255,255,1);
     text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px yellow;
 }
-.welcome-txt h1{
-    font-size: 2.8em;
+.typewriter{
+    display: inline-block;
+    overflow: hidden;
+    border-right: .25em solid;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: 
+    typing 1.5s steps(30, end),
+    blink-caret .75s step-end infinite;
 }
+.typewriter h1{
+    font-size: 3.5em;
+    font-weight: bold;
+    display: inline-block;
+}
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 22em }
+}
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgba(255,255,255,1) }
+}
+
 .social {
     margin: 2% auto;
     text-align: center;
@@ -88,15 +105,9 @@ section {
     color: rgba(255,255,255,0.4);
     float: right;
 }
-
-/* nav area */
-
-/* .custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.custom-toggler.navbar-toggler {
-    border-color: rgb(255,255,255,0);
-}  */
+/*******************************************
+                NAV
+*******************************************/
 .navbar {
     position: fixed;
     top: 0;
@@ -127,11 +138,9 @@ section {
     color: rgba(255,255,255,1);
     font-weight: bold;
 }
-
 /*******************************************
                 ABOUT ME
 *******************************************/
-
 .about-area {
     padding: 3rem 0;
     text-align: center;
@@ -159,6 +168,9 @@ section {
 #about2 {
     background-image: url("../img//me/img-7.jpeg");
 }
+#about3 {
+    background-image: url("../img//others/img-9.jpg");
+}
 
 .about {
     margin: auto;
@@ -180,6 +192,41 @@ section {
     margin: 20vh 30px;
     color: rgba(255,255,255,1);
 }
+
+.var-highlight{
+    color: #C0AD60;
+}
+.string-highlight{
+    color: rgba(253, 149, 90, 0.8);
+}
+.about-code {
+    margin: auto;
+}
+#typewriter-dev{
+        font-size: 1.1em;
+        margin: 0;
+        font-family: "Courier New";
+        text-align: left;
+}
+#typewriter-dev::after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+}
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
 /*******************************************
                 experience
 *******************************************/
@@ -445,10 +492,14 @@ section {
     .item_2 {
         padding: 8px;
     }
-    .about-img-1 {
-        margin-bottom: 20px;
+    #about1 {
+        margin-bottom: 30px;
     }
-    .about-img-2 {
+    .about-code {
+        margin-top: 30px;
+    }
+    #about2, #about3 {
         display: none;
     }
+    
 }

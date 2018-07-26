@@ -6,14 +6,14 @@
 $(document).ready( function () {
     $('.welcome-txt h3').hide();
     $('.background_source').hide();  
-    $('.welcome-txt h1').addClass("animated zoomInUp");
+    // $('.welcome-txt h1').addClass("animated zoomInUp");
     // $('#home').addClass("animated rotateIn")
     setTimeout(() => {
-        $('.welcome-txt h3').fadeIn(2000, function() {
+        $('.welcome-txt h3').fadeIn(2500, function() {
             $('.social').removeClass('invisible').addClass("animated jello");
             $('.background_source').fadeIn(1000);
         });
-    }, 1500);
+    }, 2000);
 
     // hover animation
     $('.hover-bounce').hover(
@@ -26,38 +26,26 @@ $(document).ready( function () {
     );
 
     // view port checker slide animation
-    $('.about-img-1').viewportChecker({
+    // about
+    $('.about-img-right').viewportChecker({
         classToRemove: 'invisible',
         classToAdd: 'animated slideInRight',
         offset: 100,
         repeat: false
     });
-    $('.about-img-2').viewportChecker({
+    $('.about-img-left').viewportChecker({
         classToRemove: 'invisible',
         classToAdd: 'animated slideInLeft',
         offset: 100,
         repeat: false
     });
+    // experience
     $('.ex').viewportChecker({
         classToRemove: 'invisible',
         classToAdd: 'animated slideInRight',
         offset: 100,
         repeat: false
     });
-    
-    $('.portfolio-area').viewportChecker({
-        classToRemove: 'invisible',
-        classToAdd: 'animated slideInRight',
-        offset: 100,
-        repeat: false
-    });
-    $('.contact-area').viewportChecker({
-        classToRemove: 'invisible',
-        classToAdd: 'animated slideInLeft',
-        offset: 100,
-        repeat: false
-    });
-    
     // view port checker logo animation
     $('.html-img').viewportChecker({
         classToAdd: 'animated fadeInLeft',
@@ -84,5 +72,43 @@ $(document).ready( function () {
         offset: 100,
         repeat: false
     });
+    // portfolio
+    $('.item1').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated slideInLeft',
+        offset: 100,
+        repeat: false
+    });
+    $('.item2').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated rotateIn',
+        offset: 100,
+        repeat: false
+    });
+    $('.item3').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated slideInRight',
+        offset: 100,
+        repeat: false
+    });
+    $('.item4').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated slideInLeft',
+        offset: 100,
+        repeat: false
+    });
+    $('.item5').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated wobble',
+        offset: 100,
+        repeat: false
+    });
+    $('.item6').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated slideInRight',
+        offset: 100,
+        repeat: false
+    });
+
     
 });
