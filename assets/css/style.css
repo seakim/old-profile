@@ -8,7 +8,6 @@ body {
 *******************************************/
 #background_video {
     position: absolute;
-    /* height: 100vh; */
     top: 50%;
     left: 50%;
     width: 100%;
@@ -195,16 +194,21 @@ section {
 
 .var-highlight{
     color: #C0AD60;
+    font-weight: 300;
 }
 .string-highlight{
     color: rgba(253, 149, 90, 0.8);
+}
+.function-highlight{
+    color: rgb(22, 100, 154);
+    font-weight: 600;
 }
 .about-code {
     margin: auto;
 }
 #typewriter-dev{
-        font-size: 1.1em;
-        margin: 0;
+        font-size: 0.8em;
+        margin: 0 0 0 27%;
         font-family: "Courier New";
         text-align: left;
 }
@@ -437,6 +441,11 @@ section {
 
 
 
+@media only screen and (max-width : 1024px) {
+    #typewriter-dev{
+        margin: 0 0 0 15%;
+    }
+}
 
 @media only screen and (max-width : 980px) {
 }
@@ -463,6 +472,9 @@ section {
     }
     .about-img {
         height: 340px;
+    }
+    #typewriter-dev{
+        margin: 0 0 0 8%;
     }
 }
 
