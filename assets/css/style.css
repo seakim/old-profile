@@ -260,13 +260,13 @@ section {
     background-color: #202325;
     height: 19px; 
 }
-.htmlCss { width: 50%; }
-.js { width: 60%; }
-.jquery { width: 60%; }
-.node { width: 10%; }
-.java { width: 40%; }
-.ror { width: 50%; }
-.sql { width: 60%; }
+.htmlCss { width: 60%; }
+.js { width: 70%; }
+.jquery { width: 70%; }
+.node { width: 30%; }
+.java { width: 60%; }
+.ror { width: 60%; }
+.sql { width: 70%; }
 
 .logo i {
     font-size: 4em;
@@ -428,6 +428,9 @@ section {
 #trivia-2 { background-image: url("../img/portfolio/trivia/trivia-2.png"); }
 #trivia-3 { background-image: url("../img/portfolio/trivia/trivia-3.png"); }
 #trivia-4 { background-image: url("../img/portfolio/trivia/trivia-4.png"); }
+#hangman-1 { background-image: url("../img/portfolio/hangman/cli-1.png"); }
+#hangman-2 { background-image: url("../img/portfolio/hangman/cli-2.png"); }
+#hangman-3 { background-image: url("../img/portfolio/hangman/cli-3.png"); }
 
 #temp-1 { background-image: url("../img/others/img-1.jpg"); }
 #temp-2 { background-image: url("../img/others/img-2.jpeg"); }
