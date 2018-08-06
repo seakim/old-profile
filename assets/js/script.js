@@ -109,6 +109,23 @@ $(document).ready( function () {
         offset: 100,
         repeat: false
     });
-
+    $('.item7').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated slideInLeft',
+        offset: 100,
+        repeat: false
+    });
+    $('.item8').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated rotateIn',
+        offset: 100,
+        repeat: false
+    });
+    $('.item9').viewportChecker({
+        classToRemove: 'invisible',
+        classToAdd: 'animated slideInRight',
+        offset: 100,
+        repeat: false
+    });
     
 });

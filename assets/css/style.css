@@ -431,6 +431,9 @@ section {
 #hangman-1 { background-image: url("../img/portfolio/hangman/cli-1.png"); }
 #hangman-2 { background-image: url("../img/portfolio/hangman/cli-2.png"); }
 #hangman-3 { background-image: url("../img/portfolio/hangman/cli-3.png"); }
+#bamazon-1 { background-image: url("../img/portfolio/bamazon/customer.png"); }
+#bamazon-2 { background-image: url("../img/portfolio/bamazon/manager.png"); }
+#bamazon-3 { background-image: url("../img/portfolio/bamazon/supervisor.png"); }
 
 #temp-1 { background-image: url("../img/others/img-1.jpg"); }
 #temp-2 { background-image: url("../img/others/img-2.jpeg"); }
