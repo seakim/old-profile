@@ -95,7 +95,7 @@
             <div class="col-md-6 col-ls-12 about">
                 <h3><span class="fa fa-instagram"></span> Who I am</h3>
                 <p>I am (or soon to be) a full-stack web developer currently looking for opportunities in NY/NJ area.  
-                    I’m experienced in HTML/CSS/Javascript, JQuery, Java, Ruby on Rails, and SQL (React, Node.js, Express, MongoDB will be covered).<br>
+                    I’m experienced in HTML, CSS, Javascript, JQuery, Node.js, Express, Java, Ruby on Rails, and SQL (React, MongoDB will be covered).<br>
                     I have Bachelor’s degree (magna cum laude) in Mathematics and minor in Computer Science, 
                     and currently in a Full Stack Development course through Rutgers University Coding Bootcamp.
                 </p>
@@ -212,16 +212,19 @@
             <div class="col-lg-4 col-md-6 item6 invisible">
                 <div class="card pf-img" id="bamazon-1" data-toggle="modal" data-target="#bamazon"></div>
             </div>
-            <div class="col-lg-4 col-md-6 item6 invisible">
+            <div class="col-lg-4 col-md-6 item4 invisible">
                 <div class="card pf-img" id="ff-2" data-toggle="modal" data-target="#ff"></div>
             </div>
-            <div class="card_1 col-lg-4 col-md-6 pftemp item7 invisible">
+            <div class="col-lg-4 col-md-6 item2 invisible">
+                <div class="card pf-img" id="burger-1" data-toggle="modal" data-target="#burger"></div>
+            </div>
+            <div class="card_1 col-lg-4 col-md-6 pftemp item6 invisible">
                 <div class="card pf-img" id="temp-1" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
                 <p class="pf-placeholder-note">
                     <b>Placeholder Image</b>
                 </p>
             </div>
-            <div class="card_1 col-lg-4 col-md-6 pftemp item8 invisible">
+            <div class="card_1 col-lg-4 col-md-6 pftemp item4 invisible">
                 <div class="card pf-img" id="temp-4" data-toggle="modal" data-target=".bd-example-modal-lg"></div>
                 <p class="pf-placeholder-note">
                     <b>Placeholder Image</b>
@@ -644,6 +647,53 @@
         </div>
     </div>
 
+    <!-- BURGER -->
+    <div class="modal fade" id="burger" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="card">
+                    <!-- carousel -->
+                    <div id="ff-carousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100 pf-modal-img" id="burger-1">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#ff-carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#ff-carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <p id="toLink">
+                            <a href="https://floating-spire-29121.herokuapp.com/" target="_blank"><i><b>CLICK IT</b> AND TRY THE APP!!!</i></a>
+                        </p><br>
+                        <h2 class="card-title"><b><i>BURGER HEAVEN</i></b></h2>
+                        <div class="card-text">
+                            <div class="tool-used"><b>#Node.js #Express.js #Handlebars #Javascript #ORM #MySQL #Heroku</b></div>
+                            <br><br>
+                            <p class="description">The app is following MVC design pattern using Node and MySQL to query and route data, and Handlebars to generate the HTML.<br>
+                            </p>
+                            <p>
+                                <i>&emsp;When a user submits a burger's name, the app will display the burger -- waiting to be devoured.<br>
+                                    &emsp;When the user clicks Devour button, the burger status is changed to devoured and moves.<br>
+                                    &emsp;When the user clicks Delete button, the burger will be removed from the card.
+                                </i>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- modal template -->
     <div class="modal fade bd-example-modal-lg" id="/" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
